@@ -25,7 +25,7 @@ const Layout = ({ title = "Title", children }) => {
   return (
     <div>
       <Header siteTitle={data.site.siteMetadata?.title || title} />
-      <main>{children}</main>
+      <main style={{ fontFamily: "Work Sans" }}>{children}</main>
     </div>
   )
 }

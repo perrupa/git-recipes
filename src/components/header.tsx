@@ -7,7 +7,7 @@ type Props = {
 
 const Header = ({ siteTitle = "" }: Props) => (
   <header>
-    <h1>
+    <h1 style={{ fontFamily: "Inconsolata" }}>
       <Link to="/">{siteTitle}</Link>
     </h1>
   </header>
