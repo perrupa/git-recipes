@@ -5,12 +5,14 @@ type Props = {
   siteTitle: string
 }
 
-const Header = ({ siteTitle = "" }: Props) => (
-  <header>
-    <h1 style={{ fontFamily: "Inconsolata" }}>
-      <Link to="/">{siteTitle}</Link>
-    </h1>
-  </header>
-)
+const Header = ({ siteTitle = "" }: Props) => {
+  return (
+    <header>
+      <h1 style={{ fontFamily: "Inconsolata" }}>
+        <Link to="/">{siteTitle}</Link>
+      </h1>
+    </header>
+  )
+}
 
 export default Header
