@@ -6,10 +6,15 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
+import { Header } from "./header"
 
-import Header from "./header"
+import "./reset.css"
+
+const Container = styled.main`
+  font-family: "Inconsolata";
+`
 
 const Layout = ({ title = "Title", children }) => {
   const data = useStaticQuery(graphql`
@@ -23,15 +28,11 @@ const Layout = ({ title = "Title", children }) => {
   `)
 
   return (
-    <div>
+    <main>
       <Header siteTitle={data.site.siteMetadata?.title || title} />
-      <main style={{ fontFamily: "Work Sans" }}>{children}</main>
-    </div>
+      <Container>{children}</Container>
+    </main>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

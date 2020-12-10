@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "git-recipes",
   "private": true,
   "description": "Common git commands, recipes and full-blown source control meals",
   "version": "0.1.0",
@@ -18,13 +18,19 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
+    "@types/styled-components": "^5.1.5",
     "prettier": "2.1.2"
   },
+  "resolutions": {
+    "styled-components": "^5"
+  },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "git"
   ],
   "license": "0BSD",
   "scripts": {

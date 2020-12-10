@@ -39,7 +39,7 @@ module.exports = {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: [`Inconsolata`, `Work Sans`],
+          families: [`Inconsolata`],
         },
       },
     },
